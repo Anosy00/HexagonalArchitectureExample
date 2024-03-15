@@ -3,10 +3,10 @@ package org.example.adapters;
 import java.util.HashMap;
 import java.util.Map;
 
-public class StorageService implements org.example.ports.StorageService {
+public class DummyStorageService implements org.example.ports.StorageService {
     private Map<String, Integer> stock;
 
-    public StorageService() {
+    public DummyStorageService() {
         this.stock = new HashMap<>();
     }
 

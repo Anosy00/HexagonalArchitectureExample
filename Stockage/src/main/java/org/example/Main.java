@@ -1,13 +1,13 @@
 package org.example;
 
-import org.example.adapters.StorageService;
+import org.example.adapters.DummyStorageService;
 import org.example.core.StockManager;
 
 import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        StorageService storageService = new StorageService();
+        DummyStorageService storageService = new DummyStorageService();
         StockManager stockManager = new StockManager(storageService);
 
         // Test adding and removing products
