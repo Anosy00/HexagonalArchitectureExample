@@ -1,14 +1,12 @@
 package org.example.adapters;
 
-import org.example.ports.StorageService;
-
 import java.util.HashMap;
 import java.util.Map;
 
-public class DummyStorageService implements StorageService {
+public class StorageService implements org.example.ports.StorageService {
     private Map<String, Integer> stock;
 
-    public DummyStorageService() {
+    public StorageService() {
         this.stock = new HashMap<>();
     }
 
